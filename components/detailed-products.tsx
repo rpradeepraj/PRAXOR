@@ -20,6 +20,8 @@ import { ImageWithFallback } from "./image-with-fallback"
 import flaskImg from "../images/laboratory-chemicals.png";
 import glasswareImg from "../images/glassware-collection.png";
 import scientificInstrumentsImg from "../images/scientific-instruments.png";
+import shiMedia from "../images/hiMedia.png";
+
 import microscopeEquipmentImg from "../images/microscope-equipment.png";
 import weighingBalanceImg from "../images/weighing-balance.png";
 
@@ -68,7 +70,7 @@ export function DetailedProducts() {
         "MOLECULAR BIOLOGY KITS",
       ],
       brands: ["HIMEDIA"],
-      image: scientificInstrumentsImg,
+      image: shiMedia,
     },
     {
       icon: Settings,
