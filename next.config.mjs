@@ -10,8 +10,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/PRAXOR',
-  assetPrefix: '/PRAXOR/'
+  
 }
 
 export default nextConfig
