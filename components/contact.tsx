@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { MapPin, Phone, Mail, Clock,Instagram, Facebook } from "lucide-react"
 
 export function Contact() {
   return (
@@ -71,6 +71,33 @@ export function Contact() {
                     </p>
                   </div>
                 </div>
+                <div className="flex items-center space-x-3 sm:space-x-4">
+            <div className="flex space-x-2">
+              <Instagram className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+              <Facebook className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            </div>
+            <div>
+              <h3 className="font-semibold mb-1 text-sm sm:text-base">Follow Us</h3>
+              <div className="flex space-x-4 text-xs sm:text-sm">
+                <a
+                  href="https://www.instagram.com/praxorindia/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="opacity-90 hover:opacity-100 transition-opacity underline"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com/PRAXORCHENNAI"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="opacity-90 hover:opacity-100 transition-opacity underline"
+                >
+                  Facebook
+                </a>
+              </div>
+            </div>
+          </div>
               </CardContent>
             </Card>
           </div>

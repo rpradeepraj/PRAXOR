@@ -21,20 +21,19 @@ export function EquipmentCatalog() {
   }
 
   const downloadPDF = () => {
-    // Create a link to download the PDF file from public folder
-    const link = document.createElement("a")
-    link.href = "./PSC CATLOG 2022.pdf" // Assumes PDF file is in public folder
-    link.download = "PRAXOR_Equipment_Catalog.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+    link.href = "/PSC_CATLOG_2022.pdf"; // Correct path
+    link.download = "PSC_CATLOG_2022.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const downloadExcel = () => {
     // Create a link to download the Excel file from public folder
     const link = document.createElement("a")
-    link.href = "./psc_ocr.xlsx" // Assumes Excel file is in public folder
-    link.download = "psc_ocr.xlsx"
+    link.href = "./psc_ocr.xls" // Assumes Excel file is in public folder
+    link.download = "psc_ocr.xls"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
