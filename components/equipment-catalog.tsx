@@ -7,6 +7,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Download, ArrowRight, Zap, FileText, FileSpreadsheet } from "lucide-react"
 import { useState } from "react"
 import { ImageWithFallback } from "./image-with-fallback"
+import Autoclave from "../images/Autoclave.jpg"
+import Bacteriological_Incubator from "../images/Bacteriological_Incubator.jpeg"
+import B_O_D_Incubator from "../images/B_O_D_Incubator.png"
+import Hot_Air_Oven from "../images/Hot_Air_Oven.jpg"
+import Muffle_Furnace from "../images/Muffle_Furnace.jpg"
+import Serological_Water_Bath from "../images/Serological_Water_Bath.jpg"
+import Laboratory_Water_Bath from "../images/Laboratory_Water_Bath.jpg"
+
+
+
+
+
+
 
 
 export function EquipmentCatalog() {
@@ -89,7 +102,7 @@ Visit our website for complete product catalog.
             { size: "300x500mm", capacity: "40 ltrs", power: "3 kw" },
             { size: "350x600mm", capacity: "50 ltrs", power: "3 kw" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Autoclave,
         },
       ],
     },
@@ -115,7 +128,7 @@ Visit our website for complete product catalog.
             { size: "450x450x450mm", shelves: "2 nos", power: "500w" },
             { size: "600x600x600mm", shelves: "3 nos", power: "750w" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Bacteriological_Incubator,
         },
         {
           model: "PSCI-104",
@@ -137,7 +150,7 @@ Visit our website for complete product catalog.
             { size: "505x830x415mm", capacity: "6.0 Cu.Ft", power: "1.5 kw" },
             { size: "650x900x580mm", capacity: "12.0 Cu.Ft", power: "2.0 kw" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: B_O_D_Incubator,
         },
       ],
     },
@@ -163,7 +176,7 @@ Visit our website for complete product catalog.
             { size: "450x450x450mm", shelves: "2 nos", power: "1.8kw" },
             { size: "600x600x600mm", shelves: "3 nos", power: "3.0kw" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Hot_Air_Oven,
         },
         {
           model: "PSCI-112/113",
@@ -181,7 +194,7 @@ Visit our website for complete product catalog.
             { size: "150x150x300mm", power: "3.5kw", type: "Standard" },
             { size: "300x300x300mm", power: "7.5kw", type: "High Temp" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Muffle_Furnace,
         },
       ],
     },
@@ -207,7 +220,7 @@ Visit our website for complete product catalog.
             { size: "350x250x175mm", racks: "4 racks", power: "1.5 KW" },
             { size: "600x300x175mm", racks: "8 racks", power: "3 KW" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Serological_Water_Bath,
         },
         {
           model: "PSCI-125/126",
@@ -229,7 +242,7 @@ Visit our website for complete product catalog.
             { type: "6 Holes", size: "350x250x100mm", power: "1000W" },
             { type: "12 Holes", size: "400x300x100mm", power: "1500W" },
           ],
-          image: "/placeholder.svg?height=200&width=300",
+          image: Laboratory_Water_Bath,
         },
       ],
     },
@@ -317,7 +330,7 @@ Visit our website for complete product catalog.
                           <ImageWithFallback
                             src={equipment.image || "/placeholder.svg"}
                             alt={equipment.name}
-                            className="w-full max-w-48 h-32 object-cover rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg"
+                            className="w-full max-w-48 h-50 object-cover rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg"
                             loading="lazy"
                           />
                           {hoveredEquipment === equipment.name && (
@@ -331,10 +344,10 @@ Visit our website for complete product catalog.
                       </div>
                     </CardHeader>
 
-                    <CardContent className="space-y-6 p-4 sm:p-6">
+                    <CardContent className="space-y-6 p-4 sm:p-6 lg:mt-[-100px]">
                       <div className="animate-fade-in-up delay-200">
                         <h4 className="font-semibold text-gray-800 mb-3 flex items-center">
-                          <span className="w-2 h-2 bg-amber-600 rounded-full mr-2"></span>
+                          <span className="w-2 h-2 bg-amber-600 rounded-full mr-2 "></span>
                           Applications:
                         </h4>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">

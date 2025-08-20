@@ -24,6 +24,10 @@ import shiMedia from "../images/hiMedia.png";
 
 import microscopeEquipmentImg from "../images/microscope-equipment.png";
 import weighingBalanceImg from "../images/weighing-balance.png";
+import Laboratory_Chemicals from "../images/chemcal_lab.jpg"
+import Whatman_Filter_Papers from "../images/Whatman_Filter_Papers.png"
+
+
 
 export function DetailedProducts() {
   const [hoveredCard, setHoveredCard] = useState<number | null>(null)
@@ -43,7 +47,7 @@ export function DetailedProducts() {
       color: "from-slate-700 to-slate-800",
       grades: ["HPLC GRADE", "AR GRADE", "ACS GRADE", "LR", "SUPRAPUR", "EUROPEAN PHARMACOPOEIA GRADE"],
       brands: ["MERCK", "FISHER", "RANKEM", "LOBA", "SRL", "SD FINE", "SPECTROCHEM", "SIGMA ALDRICH", "TCI"],
-      image: flaskImg,
+      image: Laboratory_Chemicals,
     },
     {
       icon: Beaker,
@@ -90,7 +94,7 @@ export function DetailedProducts() {
         "SYRINGE FILTER",
       ],
       brands: ["WHATMAN"],
-      image: flaskImg,
+      image: Whatman_Filter_Papers,
     },
     {
       icon: Thermometer,
