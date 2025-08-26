@@ -16,24 +16,24 @@ export function Contact() {
     message: ''
   })
   
-  const [errors, setErrors] = useState({})
+  const [errors, setErrors] = useState<any>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
-  const [submitStatus, setSubmitStatus] = useState(null) // 'success', 'error', or null
+  const [submitStatus, setSubmitStatus] = useState<any>(null) // 'success', 'error', or null
 
   // Validation functions
-  const validateEmail = (email) => {
+  const validateEmail = (email:string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
 
-  const validatePhone = (phone) => {
+  const validatePhone = (phone:any) => {
     if (!phone) return true // Phone is optional
     const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/
     return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''))
   }
 
   const validateForm = () => {
-    const newErrors = {}
+    const newErrors:any = {}
 
     // Required field validations
     if (!formData.fullName.trim()) {
@@ -60,7 +60,7 @@ export function Contact() {
     return newErrors
   }
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e:any) => {
     const { name, value } = e.target
     setFormData(prev => ({
       ...prev,
@@ -69,7 +69,7 @@ export function Contact() {
     
     // Clear error when user starts typing
     if (errors[name]) {
-      setErrors(prev => ({
+      setErrors((prev:any) => ({
         ...prev,
         [name]: ''
       }))
@@ -124,7 +124,7 @@ export function Contact() {
   //   }
   // }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault()
     
     // Validate form
