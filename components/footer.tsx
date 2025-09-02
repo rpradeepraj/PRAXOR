@@ -1,4 +1,6 @@
 import { MapPin, Phone, Mail } from "lucide-react"
+import { ImageWithFallback } from "./image-with-fallback"
+import logo from "../images/logo.png"
 
 export function Footer() {
   return (
@@ -8,8 +10,13 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4 sm:mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-slate-800 to-amber-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg sm:text-xl">P</span>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-slate-100 to-amber-100  rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg sm:text-xl"><ImageWithFallback
+                            src={logo || "/placeholder.svg"}
+                            alt={logo}
+                            className="w-full max-w-10 h-12"
+                            loading="lazy"
+                          /></span>
               </div>
               <div>
                 <h3 className="text-lg sm:text-xl font-bold">PRAXOR</h3>

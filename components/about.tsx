@@ -2,6 +2,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Truck, Clock, Award } from "lucide-react"
 import { ImageWithFallback } from "./image-with-fallback"
 import missionImg from "../images/laboratory-setup.png"
+import logo from "../images/logo.png"
+
 
 export function About() {
   const features = [
@@ -91,8 +93,13 @@ export function About() {
               </div>
               <CardContent className="p-8">
                 <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-r from-slate-800 to-amber-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition-all duration-300">
-                    <span className="text-white font-bold text-2xl">P</span>
+                  <div className="w-20 h-20 bg-gradient-to-r from-slate-100 to-amber-100 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg transform hover:scale-110 transition-all duration-300">
+                    <span className="text-white font-bold text-2xl"><ImageWithFallback
+                            src={logo || "/placeholder.svg"}
+                            alt={logo}
+                            className="w-full max-w-10 h-12"
+                            loading="lazy"
+                          /></span>
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800 mb-2">Our Mission</h3>
                 </div>

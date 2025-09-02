@@ -3,6 +3,9 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
+import logo from "../images/logo.png"
+import { ImageWithFallback } from "./image-with-fallback"
+
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -21,8 +24,13 @@ export function Header() {
         <div className="flex items-center justify-between py-3 sm:py-4">
           {/* Logo */}
           <div className="flex items-center space-x-2 flex-shrink-0">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-slate-800 to-amber-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg sm:text-xl">P</span>
+            <div className="w-13 h-13 sm:w-13 sm:h-13 bg-gradient-to-r from-slate-100 to-amber-100 rounded-lg flex items-center justify-center ">
+              <span className="text-white font-bold text-lg sm:text-xl"> <ImageWithFallback
+                            src={logo || "/placeholder.svg"}
+                            alt={logo}
+                            className="w-full max-w-20 h-12"
+                            loading="lazy"
+                          /></span>
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-gray-800">PRAXOR</h1>
