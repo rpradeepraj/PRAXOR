@@ -186,88 +186,98 @@ export function Contact() {
 
         <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
           {/* Contact Information */}
-          <div className="lg:col-span-1 order-2 lg:order-1">
-            <Card className="bg-gradient-to-br from-slate-800 to-amber-700 text-white border-0 h-full">
-              <CardHeader className="p-4 sm:p-6">
-                <CardTitle className="text-xl sm:text-2xl font-bold">Contact Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6 pt-0">
-                <div className="flex items-start space-x-3 sm:space-x-4">
-                  <MapPin className="w-5 h-5 sm:w-6 sm:h-6 mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-sm sm:text-base">Address</h3>
-                    <p className="opacity-90 text-xs sm:text-sm leading-relaxed">
-                    PLOT NO 1-B 
-                      <br />
-                      PRAXOR HOUSE PURATASI STREET,
-                      <br />
-                      Balamurugan Nagar
-                      <br />
-                      Alapakkam, Porur
-                      <br />
-                      Chennai - 600116
-                      <br />
-                    </p>
-                  </div>
-                </div>
+          <Card className="bg-gradient-to-br from-slate-800 to-amber-700 text-white border-0 h-full">
+      <CardHeader className="p-4 sm:p-6">
+        <CardTitle className="text-xl sm:text-2xl font-bold">Contact Information</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6 pt-0">
+        <div className="flex items-start space-x-3 sm:space-x-4">
+          <MapPin className="w-5 h-5 sm:w-6 sm:h-6 mt-1 flex-shrink-0" />
+          <div>
+            <h3 className="font-semibold mb-1 text-sm sm:text-base">Address</h3>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=PLOT+NO+1-B+PRAXOR+HOUSE+PURATASI+STREET,+Balamurugan+Nagar+Alapakkam,+Porur+Chennai+-+600116"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="opacity-90 text-xs sm:text-sm leading-relaxed hover:underline"
+            >
+              PLOT NO 1-B
+              <br />
+              PRAXOR HOUSE PURATASI STREET,
+              <br />
+              Balamurugan Nagar
+              <br />
+              Alapakkam, Porur
+              <br />
+              Chennai - 600116
+              <br />
+            </a>
+          </div>
+        </div>
 
-                <div className="flex items-center space-x-3 sm:space-x-4">
-                  <Phone className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-sm sm:text-base">Phone</h3>
-                    <p className="opacity-90 text-sm sm:text-base">+91 95248 63004</p>
-                  </div>
-                </div>
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          <Phone className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+          <div>
+            <h3 className="font-semibold mb-1 text-sm sm:text-base">Phone</h3>
+            <a href="tel:+919524863004" className="opacity-90 text-sm sm:text-base hover:underline">
+              +91 95248 63004
+            </a>
+          </div>
+        </div>
 
-                <div className="flex items-center space-x-3 sm:space-x-4">
-                  <Mail className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-sm sm:text-base">Email</h3>
-                    <p className="opacity-90 text-xs sm:text-sm break-all">proxorscientificco@gmail.com</p>
-                  </div>
-                </div>
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          <Mail className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+          <div>
+            <h3 className="font-semibold mb-1 text-sm sm:text-base">Email</h3>
+            <a
+              href="mailto:proxorscientificco@gmail.com"
+              className="opacity-90 text-xs sm:text-sm break-all hover:underline"
+            >
+              proxorscientificco@gmail.com
+            </a>
+          </div>
+        </div>
 
-                <div className="flex items-center space-x-3 sm:space-x-4">
-                  <Clock className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold mb-1 text-sm sm:text-base">Business Hours</h3>
-                    <p className="opacity-90 text-xs sm:text-sm">
-                      Mon - Sat: 9:00 AM - 6:00 PM
-                      <br />
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-3 sm:space-x-4">
-            <div className="flex space-x-2">
-              <Instagram className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-              <Facebook className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
-            </div>
-            <div>
-              <h3 className="font-semibold mb-1 text-sm sm:text-base">Follow Us</h3>
-              <div className="flex space-x-4 text-xs sm:text-sm">
-                <a
-                  href="https://www.instagram.com/praxorindia/?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-90 hover:opacity-100 transition-opacity underline"
-                >
-                  Instagram
-                </a>
-                <a
-                  href="https://www.facebook.com/PRAXORCHENNAI"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-90 hover:opacity-100 transition-opacity underline"
-                >
-                  Facebook
-                </a>
-              </div>
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          <Clock className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+          <div>
+            <h3 className="font-semibold mb-1 text-sm sm:text-base">Business Hours</h3>
+            <p className="opacity-90 text-xs sm:text-sm">
+              Mon - Sat: 9:00 AM - 6:00 PM
+              <br />
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center space-x-3 sm:space-x-4">
+          <div className="flex space-x-2">
+            <Instagram className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+            <Facebook className="w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0" />
+          </div>
+          <div>
+            <h3 className="font-semibold mb-1 text-sm sm:text-base">Follow Us</h3>
+            <div className="flex space-x-4 text-xs sm:text-sm">
+              <a
+                href="https://www.instagram.com/praxorindia/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-90 hover:opacity-100 transition-opacity underline"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.facebook.com/PRAXORCHENNAI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="opacity-90 hover:opacity-100 transition-opacity underline"
+              >
+                Facebook
+              </a>
             </div>
           </div>
-              </CardContent>
-            </Card>
-          </div>
+        </div>
+      </CardContent>
+    </Card>
 
           {/* Contact Form */}
           <div className="lg:col-span-2 order-1 lg:order-2">

@@ -75,39 +75,51 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Contact Info</h4>
-            <div className="space-y-3 sm:space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 mt-1 flex-shrink-0" />
-                <div className="text-xs sm:text-sm text-gray-300">
-                PLOT NO 1-B 
-                      <br />
-                      PRAXOR HOUSE PURATASI STREET,
-                      <br />
-                      Balamurugan Nagar
-                      <br />
-                      Alapakkam, Porur
-                      <br />
-                      Chennai - 600116
-                      <br />
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0" />
-                <span className="text-xs sm:text-sm text-gray-300">+91 95248 63004</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 mt-1 flex-shrink-0" />
-                <span className="text-xs sm:text-sm text-gray-300 break-all">proxorscientificco@gmail.com</span>
-              </div>
-            </div>
-          </div>
+      <h4 className="text-base sm:text-lg font-semibold mb-4 sm:mb-6">Contact Info</h4>
+      <div className="space-y-3 sm:space-y-4">
+        <div className="flex items-start space-x-3">
+          <MapPin className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 mt-1 flex-shrink-0" />
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=PLOT+NO+1-B+PRAXOR+HOUSE+PURATASI+STREET,+Balamurugan+Nagar+Alapakkam,+Porur+Chennai+-+600116"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs sm:text-sm text-gray-300 hover:underline"
+          >
+            PLOT NO 1-B
+            <br />
+            PRAXOR HOUSE PURATASI STREET,
+            <br />
+            Balamurugan Nagar
+            <br />
+            Alapakkam, Porur
+            <br />
+            Chennai - 600116
+            <br />
+          </a>
+        </div>
+        <div className="flex items-center space-x-3">
+          <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 flex-shrink-0" />
+          <a href="tel:+919524863004" className="text-xs sm:text-sm text-gray-300 hover:underline">
+            +91 95248 63004
+          </a>
+        </div>
+        <div className="flex items-start space-x-3">
+          <Mail className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 mt-1 flex-shrink-0" />
+          <a
+            href="mailto:proxorscientificco@gmail.com"
+            className="text-xs sm:text-sm text-gray-300 break-all hover:underline"
+          >
+            proxorscientificco@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-              © 2024 Praxor Instruments And Scientific Corporation. All rights reserved.
+              © 2025 Praxor Instruments And Scientific Corporation. All rights reserved.
             </p>
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-right">
               Established 1992 | Trusted Laboratory Partner

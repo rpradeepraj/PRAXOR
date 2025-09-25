@@ -34,7 +34,7 @@ export function Header() {
             </div>
             <div>
               <h1 className="text-lg sm:text-xl font-bold text-gray-800">PRAXOR</h1>
-              <p className="text-xs text-gray-600 hidden sm:block">Scientific Corporation</p>
+              <p className="text-xs text-gray-600 hidden sm:block">Instruments And Scientific Corporation</p>
             </div>
           </div>
 
