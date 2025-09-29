@@ -1,18 +1,10 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import emailjs from '@emailjs/browser'
-import { AlertCircle, CheckCircle, Clock, Facebook, Instagram, Mail, MapPin, Phone } from "lucide-react"
 import { useState } from "react"
-
-interface EmailTemplateParams {
-  to_name: string;
-  from_name: string;
-  message: string;
-  reply_to?: string;
-}
-
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, AlertCircle, CheckCircle } from "lucide-react"
+import emailjs from '@emailjs/browser';
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -27,11 +19,6 @@ export function Contact() {
   const [errors, setErrors] = useState<any>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<any>(null) // 'success', 'error', or null
-
-  const serviceId = process.env.NEXT_PUBLIC_SERVICE as string;
-const templateId = process.env.NEXT_PUBLIC_TEMPLATE as string;
-const publicKey = process.env.NEXT_PUBLIC_PUBLICKEY as string;
-
 
   // Validation functions
   const validateEmail = (email:string) => {
@@ -92,12 +79,12 @@ const publicKey = process.env.NEXT_PUBLIC_PUBLICKEY as string;
 
   const sendEmail = async (templateParams: any) => {
     try {
-      const result : any = await emailjs.send(
-        serviceId,
-  templateId,
+      const result = await emailjs.send(
+        'service_27mmv8o',
+        'template_r4d1s9f',
         templateParams,
         {
-          publicKey: publicKey,
+          publicKey: 't8JXle3tKCOANC6at',
         }
       );
       return result;
