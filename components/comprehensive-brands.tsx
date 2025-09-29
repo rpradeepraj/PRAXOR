@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, Star } from "lucide-react"
 import { useState } from "react"
 import { ImageWithFallback } from "./image-with-fallback"
-import labChemicalsImg from "../images/laboratory-chemicals.png";
+import labChemicalsImg from "../images/Chemical_Suppliers.jpeg";
 import scientificInstrumentsImg from "../images/scientific-instruments.png";
 import glasswareCollectionImg from "../images/glassware-collection.png";
 import microscopeEquipmentImg from "../images/microscope-equipment.png";
